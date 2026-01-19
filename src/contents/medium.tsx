@@ -60,7 +60,7 @@ const FreediumButton = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      🔓 Read on Freedium
+      🔓 Fuck the Medium
     </button>
   )
 }

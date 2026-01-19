@@ -1,7 +1,7 @@
 {
   "name": "medium-unlocker",
   "displayName": "Medium Unlocker",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "description": "Adds a button to open Medium articles on Freedium",
   "scripts": {
     "dev": "plasmo dev",
