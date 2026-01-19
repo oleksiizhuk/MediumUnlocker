@@ -1,0 +1,34 @@
+{
+  "name": "medium-unlocker",
+  "displayName": "Medium Unlocker",
+  "version": "1.0.1",
+  "description": "Adds a button to open Medium articles on Freedium",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleksiizhuk/MediumUnlocker.git"
+  },
+  "author": "oleksiizhuk",
+  "license": "MIT",
+  "dependencies": {
+    "plasmo": "^0.90.5",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.34",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://medium.com/*",
+      "https://*.medium.com/*"
+    ]
+  }
+}
