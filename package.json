@@ -1,12 +1,16 @@
 {
   "name": "medium-unlocker",
   "displayName": "Medium Unlocker",
-  "version": "1.0.1",
+  "version": "1.1.2",
   "description": "Adds a button to open Medium articles on Freedium",
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
-    "package": "plasmo package"
+    "package": "plasmo package",
+    "release": "npm version patch --no-git-tag-version && plasmo build",
+    "releaseWithPackage": "npm version patch --no-git-tag-version && plasmo build && plasmo package",
+    "release:minor": "npm version minor --no-git-tag-version && plasmo build && plasmo package",
+    "release:major": "npm version major --no-git-tag-version && plasmo build && plasmo package"
   },
   "repository": {
     "type": "git",
@@ -28,7 +32,9 @@
   "manifest": {
     "host_permissions": [
       "https://medium.com/*",
-      "https://*.medium.com/*"
+      "https://*.medium.com/*",
+      "https://levelup.gitconnected.com/*",
+      "https://*.gitconnected.com/*"
     ]
   }
 }

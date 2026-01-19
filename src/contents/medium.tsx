@@ -2,7 +2,12 @@ import type { PlasmoCSConfig } from "plasmo"
 import { useState } from "react"
 
 export const config: PlasmoCSConfig = {
-  matches: ["https://medium.com/*", "https://*.medium.com/*"]
+  matches: [
+    "https://medium.com/*",
+    "https://*.medium.com/*",
+    "https://levelup.gitconnected.com/*",
+    "https://*.gitconnected.com/*"
+  ]
 }
 
 export const getStyle = () => {
@@ -10,7 +15,7 @@ export const getStyle = () => {
   style.textContent = `
     .freedium-button {
       position: fixed;
-      top: 40px;
+      top: 60px;
       right: 40px;
       z-index: 99999;
       padding: 12px 20px;
